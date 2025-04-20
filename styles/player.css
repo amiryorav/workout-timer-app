@@ -1,0 +1,170 @@
+/* Player screen styles */
+#player-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  min-height: 70vh;
+}
+
+.timer-display {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.phase-name {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.timer {
+  font-size: var(--font-size-huge);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--spacing-lg);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-border);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  margin-bottom: var(--spacing-md);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: var(--color-primary);
+  transition: width var(--transition-fast);
+}
+
+.set-counter {
+  font-size: var(--font-size-large);
+  font-weight: 500;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Player controls */
+.player-controls {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+}
+
+.player-controls .btn.control {
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.player-controls .btn.control.large {
+  min-width: 80px;
+  height: 80px;
+}
+
+.player-controls .icon {
+  font-size: 24px;
+}
+
+.player-controls .btn.control.large .icon {
+  font-size: 32px;
+}
+
+/* Player settings */
+.player-settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xl);
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.volume-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+#volume-slider {
+  width: 150px;
+  margin-top: var(--spacing-xs);
+}
+
+/* Home screen styles */
+.workout-selection {
+  margin-bottom: var(--spacing-lg);
+}
+
+.workout-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.workout-preview {
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.workout-controls {
+  display: flex;
+  justify-content: center;
+}
+
+/* Workout preview styling */
+.preview-section {
+  margin-bottom: var(--spacing-lg);
+}
+
+.preview-section-title {
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-secondary);
+}
+
+.preview-steps {
+  list-style: none;
+}
+
+.preview-step {
+  display: flex;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-xs);
+}
+
+.preview-step.exercise {
+  background-color: rgba(var(--color-primary-rgb), 0.1);
+}
+
+.preview-step.rest {
+  background-color: rgba(var(--color-secondary-rgb), 0.1);
+}
+
+.preview-step-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.preview-step-duration {
+  font-variant-numeric: tabular-nums;
+} 
